@@ -26,67 +26,67 @@ $name_file_season = basename(dirname( __DIR__)); /* Name This Season */
 
     <h1 class="md:hidden">توضیحات</h1>
     <div class="content_lessons CONTENT_COLOR">
-        <h1>توزیع آرچ لینوکس</h1>
-        <h2>بررسی سریع : </h2>
+        <h1>دستور cp</h1>
+        <h2>دستور کپی کردن فایل ها</h2>
         <p>
-            توزیع های لینوکسی به خاطر سادگیشون معروف شدن اما توزیع آرچ لینوکس کلا با راحتی مشکل داره! این توزیع به کاربران اجازه میده
-            هرچیزی که دلشون خواست رو انتخاب کنن و در عین حال عملکرد سیستم بهینه بمونه!مثل جنتو هم این توزیع برای مبتدیا مناسب نیست ، اما اگه از چالش و خرابکاری و از 0 شروع کردن خوشتون میاد میتونید این توزیع رو نصب کنید (البته اگه بتونید!)
-            <br>
-            مهم ترین مورد توی آرچ ، همین شخصی سازی و اجازه به کاربرانه، تا جایی که معتقده همه ویژگی ها باید توسط کاربر شخصی سازی بشه!
-            مثلا هیچ دستکتاپ بومی از قبل روش نصب نیست و خودتون باید انتخاب کنید که چی دوس دارید!
-            همچنین پروسه نصب بسیار متفاوت تر از بقیه توزیع هاست که همین جالب ترش میکنه. و همچنین کمتر دارای نرم افزار های گرافیکیه تا شمارو
-            بیشتر درگیر خط فرمان کنه!
+            همونجور که متوجه شدید دستور cp مخفف کلمه copy عه! و چیکار میکنه؟ براتون همه چیزو کپی میکنه. خداییش کنترل سی و کنترل وی هم خوبه ها، اما تو ترمینال یه حال دیگه میده.
+            این دستور خیلی ساده است، دستور رو مینوسیم ، آرگومان اولی که بهش پاس میدیم فایل اصلیمونه و آرگومان دومی که بهش میدیم مسیر و اسمیه که میخوایم اونجا کپی بشه.
+            برای بهتر متوجه شدن بازم این زیر مینویسم عشق کنید:
         </p>
-        <h2>پکیج منیجر :</h2>
+        <pre id="Command">
+            <code>
+                cp maintext.txt /home/download/
+                # اگه مثل بالا وارد کنید به همون نام توی مسیر کپی میکنه
+                cp maintext.txt /home/download/newfile.txt
+                # اگه هم مثل بالا بزارید به نامی که شما دوست دارید کپی میکنه
+            </code>
+        </pre>
         <p>
-            این توزیع هم مثل جنتو از پکیج منیجر مخصوص به خودش به نام pacman استفاده میکنه.
+            حالا کجا این دستور جذاب تر میشه؟ وقتی میخواید چندین فایل با الگو خاص رو کپی کنید!
+            فرض کنید تو یه پوشه 600 تا عکس با فرمت jpg دارید و میخواید کپیش کنید تو یه مسیر دیگه، از دستور زیر میتونید استفاده کنید:
         </p>
-
-        <!-- Slider -->
-        <swiper-container>
-            <swiper-slide>
-                <img src="https://ostechnix.com/wp-content/uploads/2019/12/deb-pacman-install-package.png"
-                     alt="pacman package manager" loading="lazy">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://itsfoss.com/content/images/wordpress/2020/04/sudo-pacman-S.png"
-                     alt="pacman package manager" loading="lazy">
-            </swiper-slide>
-        </swiper-container>
-        <!-- Slider -->
-
-        <h2>استفاده :</h2>
+        <pre id="Command">
+            <code>
+                cp *.jpg /home/temp/Pic
+            </code>
+        </pre>
         <p>
-            استفاده از آرچ هم در حد گنتو پیچیده است و برای افراد مبتدی مناسب نیست ، اما سرعت و سبکیش میتونه برای هر سیستمی با
-            هر مشخصاتی مناسب باشه!
-            <br>
-            همچنین اگه واقعا میخواید یه سیستم عامل سبک داشته باشید و لینوکس رو قشنگ (با درد) حس کنید از آرچ لینوکس استفاده کنید.
-            ممکنه یکم توی یادگیریش و نصبش به مشکل بخورید ولی همین حل کردن مشکل میتونه به یادگیریتون خیلی کمک کنه!
-            <br>
-            (نصب کننده گرافیکی هم برای آرچ وجود داره ، ولی اگه میخواید واقعا چالش داشته باشید ازش استفاده نکنید و برای نصب از
-            <a href="https://wiki.archlinux.org/" class="text-red-400">
-                Arch Wiki
-            </a>
-            استفاده کنید)
+            حالا شاید بگید ستاره یعنی چی؟ ستاره یعنی همه چیز! یعنی هرچیزی به هر تعدادی، بعدشم فرمت فایل اومده، پس یعنی هرچیزی که فرمتش jpg بود رو برام انتخاب کن
+            و تو مسیری که بهت گفتم کپی کن.
+            حالا اگه همین رو برعکس کنیم هم جالب میشه، مثل زیر:
         </p>
-
-        <!-- Slider -->
-        <swiper-container>
-            <swiper-slide>
-                <img src="https://www.debugpoint.com/wp-content/uploads/2023/05/XeroLinux-Desktop.jpg"
-                     alt="arch linux" loading="lazy">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Archlinux-logo-standard-version.png/1200px-Archlinux-logo-standard-version.png"
-                     alt="arch linux" loading="lazy">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Arch_Linux_ISOLINUX_screenshot.png"
-                     alt="arch linux" loading="lazy">
-            </swiper-slide>
-        </swiper-container>
-        <!-- Slider -->
-
+        <pre id="Command">
+            <code>
+                cp jpg.* /home/temp/Pic
+            </code>
+        </pre>
+        <p>
+            دستور بالا میاد فقط فایل هایی رو میگیره که اسمشون jpg عه و فرمتشون میتونه هر چیزی باشه! تازه جالب تر هم میشه، مثلا میخواید فایل هایی رو کپی کنید که اولشون ab داره
+            برای این کارم از دستور زیر استفاده میکنید:
+        </p>
+        <pre id="Command">
+            <code>
+                cp ab*.jpg /home/temp/Pic
+            </code>
+        </pre>
+        <p>
+            کنترل سی، کنترل وی، تو خوابشم نمیتونست از این چیزا ببینه!
+            <br>
+            تازه یه فلگ باحال هم داره، برای زمانی استفاده میشه که شما چنتا پوشه دارید که داخلش چنتا پوشه دیگست و داخل هرکدومش چندین فایل و پوشه دیگه دارید (داخل نیوفولدر 1 ، نیوفولدر 2 و الی آخر (اکثر چیز خوبی تو اینا نبود!))،
+            برای همچین کاری از فلگ r استفاده میکنیم که مخفف recursive یا بازگشتیه:
+        </p>
+        <pre id="Command">
+            <code>
+                cp -r newFolder1/ /home/temp/Pic
+                # تمامی فایل و پوشه های داخل اون فولدر رو به همراه خود فولدر کپی میکنه
+            </code>
+        </pre>
+        <b>شاید بگید ، بدون این فلگ خب همین کارو میکنیم، که باید بگم تست کنید و اگه شد خبر بدید :)</b>
+        <br>
+        <p>
+            حالا ممکنه یچیزی رو کپی کنید یه جایی ولی یه فایل با همون نام وجود داشته باشه، که خب خیلی راحت رونویسی میشه، برای اینکه این اتفاق نیوفته هم میتونید از فلگ i استفاده کنید
+            اینجوری قبل از رونویسی ازتون میپرسه که رونویسی کنم یا نه.
+        </p>
     </div>
 
     <!-- Start Reference & Quiz -->
@@ -95,27 +95,30 @@ $name_file_season = basename(dirname( __DIR__)); /* Name This Season */
         <div class="CONTENT_COLOR">
             <h2>منابع مرتبط : </h2>
             <p>
-                اینجا هم منابع مرتبط و آموزشی رو براتون گذاشتم :
+                منابع تکمیلی هم مث همیشه اینجا گذاشتم :
             </p>
             <ol class="text-center">
-                <li><a href="https://archlinux.org/">سایت رسمی آرچ لینوکس</a></li>
-                <li><a href="https://wiki.archlinux.org/">ویکی آرچ لینوکس</a></li>
-                <li><a href="https://fa.wikipedia.org/wiki/%D8%A2%D8%B1%DA%86_%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">آرچ لینوکس (ویکی پدیا)</a></li>
-                <li><a href="https://digiato.com/article/2021/10/25/%D8%A2%D8%B1%DA%86-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%D9%85%D8%B2%D8%A7%DB%8C%D8%A7%DB%8C-%D8%A2%D9%86">آرچ لینوکس چیست و مناسب کدام دسته از کاربران است؟</a></li>
-                <li><a href="https://iranicaserver.com/Blog/install-arch-linux/">آموزش نصب آرچ لینوکس || Arch Linux</a></li>
+                <li><a href="https://phoenixnap.com/kb/cp-command">منبع اولی</a></li>
+                <li><a href="https://www.geeksforgeeks.org/cp-command-linux-examples/">منبع دومی</a></li>
+                <li><a href="https://www.freecodecamp.org/news/the-linux-cp-command-how-to-copy-files-in-linux/">و منبع سومی</a></li>
             </ol>
         </div>
         <div class="CONTENT_COLOR">
             <h2>آزمون :</h2>
             <ol>
                 <li>
-                    آرچ لینوکس از چه پکیج منیجری استفاده میکنه؟
+                    دستور cp میتونه چندین فایل رو هم کپی کنه؟
                     <button quiz="1"></button>
                 </li>
                 <hr>
                 <li>
-                    رو مشاهده پاسخ نزن!
-                    <button quiz="2">مشاهده پاسخ</button>
+                    فلگ r چیکار میکنه؟
+                    <button quiz="2"></button>
+                </li>
+                <hr>
+                <li>
+                    اگه نخوایم توی کپی کردن ررونویسی اتفاق بیوفته باید چیکار کنیم؟
+                    <button quiz="3"></button>
                 </li>
             </ol>
         </div>

@@ -104,7 +104,7 @@ $name_file_season = basename(dirname( __DIR__)); /* Name This Season */
 
     <!-- Start Next Lesson -->
     <?php
-    Next_Lesson('history-command');
+    Next_Lesson('history-command', 'دستور history');
     ?>
     <!-- End Next Lesson -->
 
