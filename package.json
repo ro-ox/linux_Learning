@@ -6,6 +6,6 @@
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
   },
   "dependencies": {
-    "sweetalert2": "^11.7.12"
+    "sweetalert2": "11.14.2"
   }
 }
