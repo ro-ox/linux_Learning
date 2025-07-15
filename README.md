@@ -1,3 +1,5 @@
+[نسخه فارسی مستندات](./README_fa.md)
+
 # Linux Learning Project
 
 This project provides educational content about various Linux command-line commands. Each lesson is structured to explain a specific command, its usage, and examples.
