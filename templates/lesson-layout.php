@@ -45,13 +45,20 @@ if (!isset($this) || !($this instanceof LessonHelper)) {
          nameSeason="<?= $this->getSeasonName() ?>"
          nameLesson="<?= $this->getLessonName() ?>">
 
-        <!-- References -->
         <div class="CONTENT_COLOR">
-            <h2>منابع مرتبط:</h2>
-            <?php if (!empty($metadata['references_description'])): ?>
-                <p><?= $metadata['references_description'] ?></p>
+            <!-- References -->
+            <?php if(!empty($metadata['references'])): ?>
+                <h2>منابع مرتبط:</h2>
+                <?php if (!empty($metadata['references_description'])): ?>
+                    <p><?= $metadata['references_description'] ?></p>
+                <?php endif; ?>
+                <?= $this->renderReferences($metadata['references']) ?>
             <?php endif; ?>
-            <?= $this->renderReferences($metadata['references'] ?? []) ?>
+            <!-- Exercises -->
+            <?php if(!empty($metadata['exercises'])): ?>
+                <h2>تمرینات مرتبط:</h2>
+                <?= $this->renderExercises($metadata['exercises']) ?>
+            <?php endif; ?>
         </div>
 
         <!-- Quizzes -->

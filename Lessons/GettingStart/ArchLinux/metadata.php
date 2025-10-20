@@ -1,15 +1,11 @@
 <?php
 return [
-    'title' => 'توزیع آرچ لینوکس',
+    'title' => 'آرچ لینوکس - Arch Linux',
 
     'has_slider' => true,
     'slider_images' => [
         [
             'src' => 'https://www.debugpoint.com/wp-content/uploads/2023/05/XeroLinux-Desktop.jpg',
-            'alt' => 'arch linux'
-        ],
-        [
-            'src' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Archlinux-logo-standard-version.png/1200px-Archlinux-logo-standard-version.png',
             'alt' => 'arch linux'
         ],
         [
@@ -50,7 +46,7 @@ return [
 
     'next_lesson' => [
         'url' => 'OpenSUSE',
-        'title' => 'OpenSUSE',
+        'title' => 'اپن سوزه - OpenSUSE',
         'is_season' => False
     ]
 ];

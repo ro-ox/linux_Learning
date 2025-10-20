@@ -36,7 +36,7 @@
 <!-- Slider -->
 <swiper-container>
     <swiper-slide>
-        <img src="https://slideplayer.com/slide/12761004/77/images/2/LINUX+History.jpg"
+        <img src="https://www.gnu.org/distros/screenshots/parabola2020-lxde.jpg"
              alt="linux History" loading="lazy">
     </swiper-slide>
     <swiper-slide>

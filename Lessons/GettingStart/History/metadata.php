@@ -33,7 +33,7 @@ return [
 
     'next_lesson' => [
         'url' => 'choosing-a-linux-distribution',
-        'title' => 'انتخاب توزیع',
+        'title' => 'انتخاب توزیع لینوکس',
         'is_season' => False
     ]
 ];

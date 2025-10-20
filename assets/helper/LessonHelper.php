@@ -5,12 +5,14 @@ class LessonHelper {
     private $seasonPath;
     private $lessonName;
     private $seasonName;
+    private $menu_num;
 
-    public function __construct($lessonDir) {
+    public function __construct($lessonDir, $menu_num = "") {
         $this->lessonPath = $lessonDir;
         $this->seasonPath = dirname($lessonDir);
         $this->lessonName = basename($lessonDir);
         $this->seasonName = basename($this->seasonPath);
+        $this->menu_num = $menu_num;
     }
 
     /**
@@ -54,7 +56,7 @@ class LessonHelper {
      * Load Menu
      */
     public function loadSeasonMenu() {
-        $menuFile = $this->seasonPath . '/menu.php';
+        $menuFile = $this->seasonPath . "/menu{$this->menu_num}.php";
 
         if (file_exists($menuFile)) {
             include $menuFile;
@@ -75,7 +77,7 @@ class LessonHelper {
     }
 
     /**
-     * Rendering
+     * Rendering Reference
      */
     public function renderReferences($references) {
         if (empty($references)) {
@@ -92,6 +94,23 @@ class LessonHelper {
             );
         }
         $html .= '</ol>';
+
+        return $html;
+    }
+
+    /**
+     * Rendering Reference
+     */
+    public function renderExercises($exercises) {
+        if (empty($exercises)) {
+            return '';
+        }
+
+        $html = '<ul class="text-center">';
+        foreach ($exercises as $exe) {
+            $html .= sprintf('<li><p style="text-align:right">%s</p></li><br>', $exe);
+        }
+        $html .= '</ul>';
 
         return $html;
     }
@@ -136,7 +155,7 @@ class LessonHelper {
 
         if ($isSeason) {
             return sprintf(
-                '<a href="../%s" class="md:hidden bg-red-500 hover:bg-green-800 py-1">بعدی: %s</a>',
+                '<a href="../../%s" class="md:hidden bg-red-500 hover:bg-green-800 py-1">بعدی: %s</a>',
                 $url,
                 $title
             );

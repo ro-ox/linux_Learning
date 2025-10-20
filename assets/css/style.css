@@ -56,3 +56,8 @@ swiper-container::part(bullet-active) {
 .main_content li::marker {
     color: rgb(239 68 68 / 1);
 }
+
+swiper-slide {
+    display: flex ;
+    flex-direction: column;
+}
