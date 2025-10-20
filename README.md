@@ -41,6 +41,10 @@ Make sure the following tools are installed:
     ├── Lessons/GettingStart/           # Directory for Getting Start part
     ├── Lessons/CommandLine/            # Directory for command-line-related part
     └── ....                            # Directory for other part
+├── templates/                          # Templates
+    .
+    ├── templateLesson                  # Copy this file for each lesson to edit
+    └── lesson-layout.php               # Main template for generating each lesson
 ├── Constants.php                       # Global constants used across the project
 ├── assets/                             # Shared assets like CSS, JavaScript, and images
 ├── src/                                # Reusable components like header and footer
@@ -50,6 +54,7 @@ Make sure the following tools are installed:
 ├── composer.lock                       # Locked versions of PHP dependencies
 ├── index.php                           # Main entry point for the application
 ├── .gitignore                          # Git ignore file
+├── README_fa.md                        # Persian project documentation
 └──  README.md                          # Project documentation (This File)
 ```
 
@@ -60,7 +65,9 @@ Make sure the following tools are installed:
     .
     ├── Lessons/GettingStart/History                        # Directory for lesson 1
         .
-        ├── Lessons/GettingStart/index.php                  # main content
+        ├── Lessons/GettingStart/index.php                  # Constructor
+        ├── Lessons/GettingStart/content.php                # Main Content
+        ├── Lessons/GettingStart/metadata.php               # Required metadata for each lesson
         └── Lessons/GettingStart/Quiz                       # answer content
             .
             ├── Lessons/GettingStart/Quiz/1.txt             # q1 answer content
@@ -79,8 +86,9 @@ Make sure the following tools are installed:
 2. cd to `Lessons` Directory
 3. Create or navigate to the desired part (example: GettingStart)
 4. Create or navigate to the lesson directory (example: History)
-5. Add your content in `index.php` and answers in `Quiz` directory
-6. Commit and push your changes
+5. Add the main content in `content.php` and place the answers in the `Quiz` directory.
+6. Edit the `metadata.php` file to edit exercises, resources, tests, and metadata.
+7. Commit and push your changes.
 
 #### 🧠 Tip:
-**to add a new lesson, copy an existing lesson directory, rename it, and update the content in index.php and the answers in the Quiz directory.**
+**To add a new lesson (section), copy the contents of the `templateLesson` folder into the `templates` folder, then create the contents of `content.php` and `metadata.php`. Also, the answers are saved as text in the `Quiz` directory.**
