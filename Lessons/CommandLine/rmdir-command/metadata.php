@@ -1,21 +1,18 @@
 <?php
 return [
-    'title' => 'انتخاب توزیع لینوکس',
+    'title' => 'دستور rmdir',
 
     'has_slider' => false,
     
     'exercises' => [
-        ''
+        'حقیقتا چیز خاصی نیست بهتون بگم برید تمرین کنید :('
     ],
 
-    'quizzes' => [
-        'سه بخش اساسی در سیستم های لینوکس ؟',
-        'آیا لینوکس یک سیستم عامل است ؟'
-    ],
+    'quizzes' => [],
 
     'next_lesson' => [
-        'url' => 'Debian',
-        'title' => 'دبیان - Debian',
+        'url' => 'rm-command',
+        'title' => 'دستور rm',
         'is_season' => False
     ]
 ];
