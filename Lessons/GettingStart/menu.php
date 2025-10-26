@@ -29,7 +29,10 @@
             <li id="ArchLinux" class="LIST_LESSON">آرچ لینوکس - Arch Linux</li>
         </a>
         <a href="../OpenSUSE">
-            <li id="OpenSUSE" class="LIST_LESSON">OpenSUSE</li>
+            <li id="OpenSUSE" class="LIST_LESSON">اپن سوزه - OpenSUSE</li>
+        </a>
+        <a href="../../CommandLine">
+            <li id="CommandLine" class="LIST_NEXT_SECTION">بخش بعدی - CommandLine</li>
         </a>
     </ol>
 </div>

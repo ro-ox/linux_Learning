@@ -604,7 +604,7 @@ pre {
 @media (min-width: 768px) {
   .content_lessons {
     grid-column: span 3 / span 3;
-    max-height: 80vh;
+    max-height: 85vh;
     overflow-y: auto;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;

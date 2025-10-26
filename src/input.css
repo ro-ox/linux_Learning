@@ -27,7 +27,7 @@
         @apply py-1 hover:bg-purple-700 hover:text-white duration-500;
     }
     .content_lessons { /* Style for Content Lessons */
-        @apply md:col-span-3 md:max-h-[80vh] space-y-3 text-justify rounded-2xl
+        @apply md:col-span-3 md:max-h-[85vh] space-y-3 text-justify rounded-2xl
                 md:rounded-r-2xl md:rounded-l-none border-4 border-blue-800
                 text-right py-3 px-5 text-white md:overflow-y-auto;
     }
