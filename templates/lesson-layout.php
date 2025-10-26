@@ -40,6 +40,7 @@ if (!isset($this) || !($this instanceof LessonHelper)) {
     </div>
 
     <!-- Quiz & References -->
+    <?php if(!(empty($metadata['quizzes']) && empty($metadata['references']) && empty($metadata['exercises']))): ?>
     <h1 class="md:hidden">منابع و آزمون</h1>
     <div id="referenceQuiz_lessons"
          nameSeason="<?= $this->getSeasonName() ?>"
@@ -62,11 +63,14 @@ if (!isset($this) || !($this instanceof LessonHelper)) {
         </div>
 
         <!-- Quizzes -->
+        <?php if (!empty($metadata['quizzes'])): ?>
         <div class="CONTENT_COLOR">
             <h2>آزمون:</h2>
-            <?= $this->renderQuizzes($metadata['quizzes'] ?? []) ?>
+            <?= $this->renderQuizzes($metadata['quizzes']) ?>
         </div>
+        <?php endif; ?>
     </div>
+    <?php endif; ?>
 
     <!-- Next Lesson Button -->
     <?php if (isset($metadata['next_lesson'])): ?>
